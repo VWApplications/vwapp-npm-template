@@ -1,0 +1,7 @@
+{
+    "package_name": "Nome do pacote.",
+    "package_description": "Descrição do pacote.",
+    "package_version": "Versão do pacote (X.Y.Z)",
+    "author": "Nome do autor no formato camelcase.",
+    "email": "Email do autor"
+}
