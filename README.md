@@ -4,6 +4,12 @@ Para usar precisa-se instalar o cookiecutter.
 
 Documentação: https://cookiecutter.readthedocs.io/en/1.7.0/index.html
 
+### Pip
+
+```
+pip3 install cookiecutter
+```
+
 ### MACOS
 
 ```
@@ -38,3 +44,45 @@ Filtros padrões:
 
 * **lower**: Deixa os caracteres minusculos.
 * **replace(target, value)**: Troca todos os target pelos values.
+* **dictsort**: Usado para ordenar o dicionários.
+
+### Python
+
+Pode-se usar o cookiecutter com python tb.
+
+```
+from cookiecutter.main import cookiecutter
+from datetime import datetime
+
+cookiecutter(
+    'https://github.com/VictorDeon/vwapp-cookiecutter.git',
+    # Um dicionário de contexto que substitui a configuração padrão e do usuário.
+    extra_context={
+        "project_name": 'TheGreatest',
+        "timestamp": datetime.utcnow().isoformat(),
+        "file_types": {
+            "png": {
+                "name": "Portable Network Graphic",
+                "library": "libpng",
+                "apps": [
+                    "GIMP"
+                ]
+            },
+            "bmp": {
+                "name": "Bitmap",
+                "library": "libbmp",
+                "apps": [
+                    "Paint",
+                    "GIMP"
+                ]
+            }
+        }
+    },
+    # Remove o uso do shell para sobrescrever as opções.
+    no_input=True,
+    # Sobrescreva o conteúdo do diretório de saída, se ele já existir.
+    overwrite_if_exists=False,
+    # Local onde será gerado o resultado do cookiecutter.
+    output_dir='.'
+)
+```
