@@ -84,4 +84,4 @@ Versões: MAJOR.MINOR.PATCH
 
 ## Licença
 
-MIT © [{{cookiecutter.author}}](https://github.com/{{cookiecutter.author}})
+MIT © [{{cookiecutter.github_username}}](https://github.com/{{cookiecutter.github_username}})

@@ -5,11 +5,11 @@
   "keywords": [
     "react"
   ],
-  "author": "{{cookiecutter.author}} <{{cookiecutter.email}}>",
+  "author": "{{cookiecutter.github_username}} <{{cookiecutter.email}}>",
   "license": "MIT",
-  "repository": "{{cookiecutter.author}}/{{cookiecutter.package_name}}",
+  "repository": "{{cookiecutter.github_username}}/{{cookiecutter.package_name}}",
   "bugs": {
-    "url": "https://github.com/{{cookiecutter.author}}/{{cookiecutter.package_name}}/issues"
+    "url": "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.package_name}}/issues"
   },
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
